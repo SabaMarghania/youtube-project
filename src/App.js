@@ -28,6 +28,7 @@ function App() {
             <div className="app__page">
             <Sidebar/>
             <YourChannel/>
+            
             </div>
             </Route>
 
