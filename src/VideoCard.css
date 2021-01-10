@@ -1,0 +1,48 @@
+.VideoCard{
+    width: 270px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.videocard__cont{
+    position: relative;
+}
+.time{
+    position: absolute;
+    width: 35px;
+    bottom: 5px;
+    margin: 4px;
+    right:  20px;
+    height: 16px;   
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    padding: 1px 4px;
+    font-weight: 500;
+    background-color: #121212;
+    font-family: sans-serif;
+    color: #fff;
+    border: 1px solid black;
+}
+.videocard__thumbnail{
+    height: 140px;
+    width: 250px;
+}
+.video__info{
+    display: flex;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+.video__text{
+    margin-left: 10px;
+}
+.video__text > h4{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.video__text p{
+    color: #606060;
+    font-family: Roboto, Arial, sans-serif;
+}
+.video__bottom{
+    margin-top: 10px;
+}
+

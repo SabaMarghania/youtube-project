@@ -1,0 +1,48 @@
+.LikedVideosRow{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.LikedVideosRow__cont{
+    display: flex;
+    background-color: #f8f1f1;
+    position: relative;
+    margin-bottom: 15px;
+}
+.LikedVideosRow__image img{
+    width: 180px;
+}
+.LikedVideosRow__image{
+    position: relative;
+}
+.LikedVideosRow__text{
+    padding-left: 15px;
+}
+.LikedVideosRow__number{
+    display: flex;
+    align-items: center;
+    width: 26px;
+    position: absolute;
+    left: -15px;
+    top:45px;
+}
+.LikedVideosRow__title{
+    font-weight: 500;
+}
+.LikedVideosRow__time{
+    position: absolute;
+    width: -moz-fit-content;
+    width: fit-content;
+    bottom: 5px;
+    margin: 4px;
+    right: 3px;
+    height: 16px;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    padding: 1px 4px;
+    font-weight: 500;
+    background-color: #121212;
+    font-family: sans-serif;
+    color: #fff;
+    border: 1px solid black;
+}

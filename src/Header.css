@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position:sticky;
+    top:0;
+    z-index:100;
+    background-color:white;
+}
+.header__logo{
+    height:25px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.header__input{
+    display: flex;
+    width: 40%;
+    outline: none;
+}
+.header__input input{
+    height: 27px;
+    outline: none;
+    padding-left: 8px;
+    outline: lightskyblue;
+}
+
+.header__icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 140px;
+    margin-right: 60px;
+    justify-content: space-between;
+}
+.header__icon{
+    margin-right: 8px;
+}
+.header__inputButton{
+    width: 50px !important;
+    border: 1px solid lightgray;
+    color:gray;
+    height: 29px !important;
+    cursor: pointer;
+}
+.header__input>input{
+    flex: 1;
+   
+}

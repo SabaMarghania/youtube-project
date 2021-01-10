@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+ 
+.Modal{
+    position: relative;
+    align-items: center;
+    max-height: 713px;
+    right: 350px;
+    background: hsla(0, 0%, 97%);
+}
+.avatarModal__settings{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    width: 290px;
+    top: 55px;
+    background: hsla(0, 0%, 97%);
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.avatarModal__text{
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    width: 240px;
+}
+.avatarModal__flex:hover{
+    background-color: rgb(233, 233, 233);
+}
+.avatarModal__settings > p {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.avatarModal__flex{
+    display: flex;
+    padding: 5px;
+    margin-left: 15px;
+    align-items: center;
+}
+.avatarModal__container{
+    display: block;
+}
+.avatarModal__profile{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    width: 290px;
+    top: -15px;
+    padding-bottom: 6px;
+    position: relative;
+}
+.avatarModal__profilePos{
+    margin-left: 15px;
+    display: flex;
+}
+.avatarModal__info{
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', Arial, sans-serif;
+    flex-direction: column;
+}
+.avatarModal__info > h4{
+    font-weight: 500;
+}
+.avatarModal__info > p{
+    font-weight: 400;
+}

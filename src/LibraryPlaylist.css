@@ -1,0 +1,36 @@
+.LibraryPlaylist{
+    margin: 2px;
+}
+.LibraryPlaylist__image img{
+    max-width: 220px;
+}
+.LibraryPlaylist__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    max-width: 240px;
+    margin-bottom: 10px;
+}
+.LibraryPlaylist__info{
+    font-family: 'Roboto', sans-serif;
+    color: #706e6e;
+    font-weight: 400;
+}
+.LibraryPlaylist__count{
+    position: relative;
+}
+.LibraryPlaylist__PN{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    font-size: 20px;
+    color: #fff;
+    width: 80px;
+    height: 97%;
+    right: 0;
+    bottom: 4px;
+    background-color: rgb(15, 15, 15,0.8);
+}
+

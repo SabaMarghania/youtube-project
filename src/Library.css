@@ -1,0 +1,71 @@
+.Library{
+    display: block;
+    width: 1000px;
+    padding: 15px 25px;
+}
+.Library > p{
+    margin-bottom: 20px;
+    font-weight: 00;
+    color: #706e6e;
+}
+.Library__top{
+    display: flex;
+}
+.Library__top > h3{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.Library__playlist{
+    margin-top: 30px;
+}
+.Library__video{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.Library__LikedVidsTop{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.Library__txt{
+    display: flex;
+}
+.Library__seeAll{
+    text-transform: uppercase;
+    color:#256fe7;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;  
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.Library__LikedVidsTop > h3{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+    font-weight: 500;
+    color: #000000;
+}
+.Library__VideosRow{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Library__likedVideos{
+    margin-top: 30px;
+}
+.Library__playlistTop{
+    display: flex;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.Library__playlistTop > h3{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+}
+.Library__playlistTop > p{
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2px;
+}
