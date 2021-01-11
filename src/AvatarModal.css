@@ -3,8 +3,9 @@
 .Modal{
     position: relative;
     align-items: center;
-    max-height: 713px;
     right: 350px;
+    color: #676767;
+    padding-top:5px;
     background: hsla(0, 0%, 97%);
 }
 .avatarModal__settings{
@@ -13,9 +14,9 @@
     flex-direction: column;
     justify-content: center;
     width: 290px;
-    top: 55px;
+    top: 50px;
     background: hsla(0, 0%, 97%);
-    height: 90vh;
+    height: 86vh;
     overflow-y: auto;
 }
 
@@ -23,7 +24,10 @@
     display: flex;
     align-items: center;
     padding: 9px;
+    justify-content: space-between;
     width: 240px;
+    color: #676767;
+
 }
 .avatarModal__flex:hover{
     background-color: rgb(233, 233, 233);
@@ -46,7 +50,6 @@
     display: flex;
     border-bottom: 1px solid lightgray;
     width: 290px;
-    top: -15px;
     padding-bottom: 6px;
     position: relative;
 }
@@ -66,4 +69,8 @@
 }
 .avatarModal__info > p{
     font-weight: 400;
+}
+.avatarModal__link{
+    text-decoration: none  !important;
+    color: #676767;
 }

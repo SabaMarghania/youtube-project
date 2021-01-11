@@ -1,5 +1,5 @@
 .History{
-    padding: 15px;
+    padding: 10px;
 }
 .History > h4{
     font-weight: 500;
@@ -16,7 +16,6 @@
 }
 .History__box{
     margin-top: -40px;
-    background: rgb(235, 232, 232);
     height: 80vh;
     padding: 18px;
 }

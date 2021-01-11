@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from "react";
 import Header from './Header';
 import Sidebar from './Sidebar';
 import RecommendedVideo from './RecommendedVideo';
@@ -11,9 +12,25 @@ import Library from './Library';
 import History from './History';
 import WatchLater from './watchLater';
 import YourChannel from './YourChannel';
+import styled,{ ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, GlobalStyles } from "./Theme.js";
+const StyledApp = styled.div`
+  color:${(props) => props.theme.fontColor} ;
+`;
+
 function App() {
+  const [theme, setTheme] = useState('light');
+   const themeToggler =()=>{
+    theme === "light"? setTheme("dark") : setTheme("light");
+  }
   return (
+    <ThemeProvider theme={theme==="light" ? lightTheme : darkTheme }>
+      <GlobalStyles/>
+      <StyledApp>
+    
     <div className="App">
+     {/* <button onClick={() => themeToggler()}>Change Theme</button> */}
+
       <Router>
         <Header/>
         <Switch>
@@ -83,9 +100,12 @@ function App() {
            
         </Switch>
       </Router>
-    
+
     </div>
+    </StyledApp>
+    </ThemeProvider>
   );
+
 }
 
 export default App;

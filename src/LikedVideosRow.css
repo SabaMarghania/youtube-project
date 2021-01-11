@@ -5,7 +5,6 @@
 }
 .LikedVideosRow__cont{
     display: flex;
-    background-color: #f8f1f1;
     position: relative;
     margin-bottom: 15px;
 }

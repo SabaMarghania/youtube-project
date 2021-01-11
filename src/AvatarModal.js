@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import {useState} from 'react';
 import Avatar from "@material-ui/core/Avatar";
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import './AvatarModal.css'
@@ -14,10 +15,26 @@ import LanguageIcon from '@material-ui/icons/Language';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import SettingsIcon from '@material-ui/icons/Settings';
 import HelpIcon from '@material-ui/icons/Help';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import FeedbackIcon from '@material-ui/icons/Feedback';
 import KeyboardIcon from '@material-ui/icons/Keyboard';
+import styled,{ ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, GlobalStyles } from "./Theme.js";
+// const StyledApp = styled.div`
+//   color:${(props) => props.theme.fontColor} ;
+// `;
+
     const Modal = ({show, close}) => {
+        const [theme, setTheme] = useState('light');
+        const themeToggler =()=>{
+         theme === "light"? setTheme("dark") : setTheme("light");
+       }
         return (
+        <>
+    <ThemeProvider theme={theme==="light" ? lightTheme : darkTheme }>
+        <GlobalStyles/>
+        {/* <StyledApp/> */}
+</ThemeProvider>
             <div className="Modal" >
                     <div style={{
                         background:'#11111',
@@ -34,7 +51,7 @@ import KeyboardIcon from '@material-ui/icons/Keyboard';
                         </div>
                             </div>
                         <div className="avatarModal__settings">
-                            <Link to="/YourChannel" style={{textDecoration:'none',color:'black'}}>
+                            <Link className="avatarModal__link" to="/YourChannel" >
                             <div className="avatarModal__flex">
                             <AccountBoxIcon style={{color:'gray'}}/>
                             <p className="avatarModal__text">Your Channel</p>
@@ -60,7 +77,9 @@ import KeyboardIcon from '@material-ui/icons/Keyboard';
 
                              <div className="avatarModal__flex">
                             <Brightness4Icon style={{color:'gray'}}/>
-                            <p className="avatarModal__text">Appearance: Light</p>
+                            <button onClick={()=>themeToggler()} className="avatarModal__text">Appearance: Light  <ArrowForwardIosIcon style={{color:'gray',fontSize:'16px',float:'right'}}/></button>
+     {/* <button onClick={() => themeToggler()}>Change Theme</button> */}
+                            
                             </div>
                             <div className="avatarModal__flex">
                                 <TranslateIcon style={{color:'gray'}}/>
@@ -86,10 +105,7 @@ import KeyboardIcon from '@material-ui/icons/Keyboard';
                              <FeedbackIcon style={{color:'gray'}}/>
                              <p className="avatarModal__text">Send feedback</p>
                              </div>
-                             <div className="avatarModal__flex">
-                             <KeyboardIcon style={{color:'gray'}}/>
-                             <p className="avatarModal__text">Keyboard shortcuts</p>
-                             </div>
+                             
                         </div>
                         </div>
                         
@@ -97,9 +113,10 @@ import KeyboardIcon from '@material-ui/icons/Keyboard';
                     
                     </div>
             </div>
+            </>
         )
-    }
-    
 
+                }
+    
 
 export default Modal

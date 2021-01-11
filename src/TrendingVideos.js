@@ -11,7 +11,6 @@ function TrendingVideos({image,views,timestamp,channel,title,description,time}) 
         <div className="TrendingVideos__text">
             <h3 className="TrendingVideos__title">{title}</h3>
             <p className="TrendingVideos__info">{channel} • {views} • {timestamp}</p>
-           
             <p className="TrendingVideos__description">{description}</p>
         </div>
     </div>

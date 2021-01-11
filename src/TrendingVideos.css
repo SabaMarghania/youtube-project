@@ -12,7 +12,6 @@
     max-height: 180px;
 }
 .TrendingVideos__title{
-    color: #000;
     font-weight: 400;
 }
 .Trending__time{
@@ -37,12 +36,13 @@
     max-width: 600px;
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
-    color: #626262;
 }
 .TrendingVideos__info{
     padding-bottom: 12px;
+    color: #626262;
     font-size: 14px;
 }
 .TrendingVideos__description{
+    color: #626262;
     font-size: 15px;
 }

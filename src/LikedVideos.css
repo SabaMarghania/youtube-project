@@ -38,7 +38,6 @@
 .LikedVideos__videos{
     display: flex;
     flex-direction: column;
-    background-color:#f8f1f1;
     margin-left: 50px;
    max-width: 100%;
     height: auto;

@@ -28,8 +28,11 @@
     color: #fff;
     border: 1px solid black;
 }
+.Subscription__info{
+    color: gray;
+
+}
 .Subscription__title{
-    color: #000;
     font-size: 16px;
     margin-bottom: 10px;
     font-weight: 500;
@@ -38,7 +41,6 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-bottom: 10px;
-    color: #323232;
 }
 .VideoTime{
     font-family: 'Roboto', sans-serif;

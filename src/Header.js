@@ -1,7 +1,7 @@
  import React,{useState} from 'react'
 import {Link} from "react-router-dom";
 import MenuIcon from '@material-ui/icons/Menu';
-import YT from './yt.png';
+// import YT from './yt.png';
 import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import VideoCallIcon from '@material-ui/icons/VideoCall';
@@ -9,6 +9,7 @@ import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from "@material-ui/core/Avatar";
 import Modal from './AvatarModal';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 function Header() {
     const[inputSearch,setInputSearch]= useState('');
     const[show,setShow] = useState(false);
@@ -16,11 +17,9 @@ function Header() {
     return (
         <div className='header'>
             <div className="header__left">
-            <Link to="/Home">
+            <Link to="/Home" style={{textDecoration:'none',color:'#676767',display:'flex'}}> 
             <MenuIcon/>
-            <img 
-            class='header__logo'
-             src={YT} alt='yt'/>
+            <h4 className="header__icon"><YouTubeIcon style={{color:'red'}}/>YouTube</h4>
              </Link>
         </div>
 
