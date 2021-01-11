@@ -24,8 +24,11 @@
     display: flex;
     align-items: center;
     padding: 9px;
+    cursor: pointer;
     justify-content: space-between;
     width: 240px;
+    outline:none;
+    border:none;
     color: #676767;
 
 }
