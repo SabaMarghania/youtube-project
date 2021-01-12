@@ -25,9 +25,17 @@ import { lightTheme, darkTheme, GlobalStyles } from "./Theme.js";
 // `;
 
     const Modal = ({show, close}) => {
+        const [title, setTitle] = useState("Light");
         const [theme, setTheme] = useState('light');
         const themeToggler =()=>{
          theme === "light"? setTheme("dark") : setTheme("light");
+       }
+       const titleChanger=()=>{
+           if(title == "Light"){
+               setTitle("Dark");
+           }else{
+               setTitle("Light");
+           }
        }
         return (
         <>
@@ -77,9 +85,12 @@ import { lightTheme, darkTheme, GlobalStyles } from "./Theme.js";
 
                              <div className="avatarModal__flex">
                             <Brightness4Icon style={{color:'gray'}}/>
-                            <button onClick={()=>themeToggler()} className="avatarModal__text">Appearance: Light  <ArrowForwardIosIcon style={{color:'gray',fontSize:'16px',float:'right'}}/></button>
-     {/* <button onClick={() => themeToggler()}>Change Theme</button> */}
-                            
+                            <button onClick={()=>{themeToggler(); titleChanger()}}
+                            className="avatarModal__text">Appearance: {title} <ArrowForwardIosIcon style={{color:'gray',fontSize:'16px',float:'right'}}/></button>
+                    {/* <button onClick={() => themeToggler()}>Change Theme</button> */}
+                         {/* onClick={() => { func1(); func2();}} */}
+                        {/* display:show ? 'flex' : 'none', */}
+
                             </div>
                             <div className="avatarModal__flex">
                                 <TranslateIcon style={{color:'gray'}}/>

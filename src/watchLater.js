@@ -1,7 +1,5 @@
 import React from 'react'
 import './watchLater.css'
-import ShuffleIcon from '@material-ui/icons/Shuffle';
-import LikedVideosRow from './LikedVideosRow';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import Avatar from "@material-ui/core/Avatar";
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
