@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/youtube-project/static/css/main.0945265a.chunk.css",
-    "main.js": "/youtube-project/static/js/main.4c4b4c4d.chunk.js",
-    "main.js.map": "/youtube-project/static/js/main.4c4b4c4d.chunk.js.map",
+    "main.js": "/youtube-project/static/js/main.525b45b1.chunk.js",
+    "main.js.map": "/youtube-project/static/js/main.525b45b1.chunk.js.map",
     "runtime-main.js": "/youtube-project/static/js/runtime-main.7202b53d.js",
     "runtime-main.js.map": "/youtube-project/static/js/runtime-main.7202b53d.js.map",
     "static/js/2.ac7ed431.chunk.js": "/youtube-project/static/js/2.ac7ed431.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7202b53d.js",
     "static/js/2.ac7ed431.chunk.js",
     "static/css/main.0945265a.chunk.css",
-    "static/js/main.4c4b4c4d.chunk.js"
+    "static/js/main.525b45b1.chunk.js"
   ]
 }
