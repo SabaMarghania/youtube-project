@@ -24,7 +24,7 @@ import { lightTheme, darkTheme, GlobalStyles } from "./Theme.js";
 //   color:${(props) => props.theme.fontColor} ;
 // `;
 
-    const Modal = ({show, close}) => {
+    const Modal = ({show, close,handleClose}) => {
         const [title, setTitle] = useState("Light");
         const [theme, setTheme] = useState('light');
         const themeToggler =()=>{
@@ -50,7 +50,7 @@ import { lightTheme, darkTheme, GlobalStyles } from "./Theme.js";
                     }}>
                         <div className="avatarModal__container">
                         <div className="avatarModal__profile">
-                        <span onClick={close} style={{position:'absolute',right:'10px'}} >x</span>
+                        <span onClick={handleClose} style={{position:'absolute',right:'10px'}} >x</span>
                             <div className="avatarModal__profilePos">
                             <Avatar/>
                             <div className="avatarModal__info">

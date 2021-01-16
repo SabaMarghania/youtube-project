@@ -10,10 +10,13 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from "@material-ui/core/Avatar";
 import Modal from './AvatarModal';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+
 function Header() {
     const[inputSearch,setInputSearch]= useState('');
     const[show,setShow] = useState(false);
     const close =()=>setShow(false);
+
+
     return (
         <div className='header'>
             <div className="header__left">
@@ -22,8 +25,9 @@ function Header() {
             <h4 className="header__icon"><YouTubeIcon style={{color:'red'}}/>YouTube</h4>
              </Link>
         </div>
-
+    {/* Search system */}
         <div className="header__input">
+
         <input value={inputSearch} onChange={(e)=>setInputSearch(e.target.value)}
          type='text' 
          placeholder="Search"
@@ -36,8 +40,6 @@ function Header() {
         <VideoCallIcon className="header__icon"/>
         <AppsIcon className="header__icon"/>
         <NotificationsIcon className="header__icon"/>
-        <Avatar onClick={()=>setShow(true)}/>
-        <Modal show={show} close={close} />
         </div>
         </div>
     )

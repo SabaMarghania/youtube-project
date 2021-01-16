@@ -1,3 +1,19 @@
 .app__page{
     display: flex;
 }
+.row{
+    display: flex;
+}
+.ui{
+    margin-top: 25px;
+}
+.filter{
+    display: flex;
+    color: gray;
+}
+.filter > p{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}

@@ -15,6 +15,7 @@ import {Link} from "react-router-dom";
 const Sidebar = () => {
     return (
         <div className="sidebar">
+            {/* <Router> */}
             <Link to="/Home" style={{textDecoration: 'none'}} >
                 <SidebarRow selected Icon={HomeIcon} title="Home" />
             </Link>
@@ -39,6 +40,7 @@ const Sidebar = () => {
                 <SidebarRow Icon={ThumbUpAltOutlinedIcon} title="Liked videos"/>
             </Link>
             <SidebarRow Icon={ExpandMoreOutlinedIcon} title="Show more"/>
+            {/* </Router> */}
             <hr/>
         </div>
     )
