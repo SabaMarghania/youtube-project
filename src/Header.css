@@ -25,11 +25,11 @@ form{
 }
 .header__input{
     display: flex;
-    width: 350px;
     outline: none;
 }
 .header__input input{
     height: 27px;
+    width: 350px;
     outline: none;
     padding-left: 8px;
     outline: lightskyblue;

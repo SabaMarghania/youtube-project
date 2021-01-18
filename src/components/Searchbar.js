@@ -46,7 +46,7 @@ class Searchbar extends React.Component {
 <div className='header'>
 <div className="header__left" >
 <MenuIcon/>
-<Link to="/Youtube" style={{textDecoration:'none'}}>
+<Link to="/youtube-project/" style={{textDecoration:'none'}}>
 <h4 className="header__icon" style={{color:'#676767'}}><YouTubeIcon style={{color:'red'}}/>YouTube</h4>
 </Link>
 </div>
@@ -54,11 +54,12 @@ class Searchbar extends React.Component {
 <form onSubmit={this.handleSubmit}>
 
 <div className="header__input">
-
+<Link to="/search">
 <input onChange={this.handleChange}
 type='text' 
 placeholder="Search"
 />
+</Link>
 </div>
 <SearchIcon className="header__inputButton"/>
 

@@ -36,18 +36,17 @@ class App extends React.Component {
         })
         console.log("this is resp",response);
     };
-    handleVideoSelect = (video) => {
+   handleVideoSelect = (video) => {
         this.setState({selectedVideo: video})
     }
     render() {
         return (
       <Router>
 
-            <div className="app">
-        <SearchBar handleFormSubmit={this.handleSubmit}/>
+      <SearchBar handleFormSubmit={this.handleSubmit}/>
 
         <Switch>
-        {/* <Header/> */}
+
 
          <Route path='/YourChannel'>
             <div className="app__page">
@@ -98,22 +97,31 @@ class App extends React.Component {
             <Trending/>
             </div>
             </Route>
-            <Route path='/Youtube'>
+         
+            <Route path='/youtube-project'>
             <div className="app__page">
             <Sidebar/>
             <RecommendedVideo/>
             </div>
             </Route>
 
-            <Route path='/Watch'>
+            <Route path='/Home'>
             <div className="app__page">
             <Sidebar/>
+            <RecommendedVideo/>
+            </div>
+            </Route>
+            
+            <Route path='/Watch'>
+            <div className="app__page">
             <VideoDetail video={this.state.selectedVideo}/>
+           <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos} />
+
           </div>
             </Route>
 
 
-            <Route path="/Home">
+            <Route path="/search">
               <div className="app__page">
               <div className="eleven wide column">
             <Sidebar/>
@@ -135,7 +143,6 @@ class App extends React.Component {
         
              
             </Switch>
-      </div>
       </Router>
 
         )

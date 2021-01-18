@@ -13,14 +13,14 @@ function LikedVideos() {
                 <img src="https://i.ytimg.com/vi/fOLT6UYrFmw/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCwQ1FZYVeGK2JNrqVvhfxo8Byliw" alt=''/>
                  <div className="LikedVideos__playAll">
                      <PlayArrowIcon/>
-                     Play All
+                     ВОСПРОИЗВЕСТИ ВСЕ
                  </div>
                </div>
             <div className="LikedVideos__info">
-                <h2>Liked videos</h2>
+                <h2>Понравившиеся</h2>
                 <div className="LikedVideos__activities">
-                    44 videos • No views • Last updated on Dec 12,2020
-                </div>
+                44 видео • Нет просмотров • Обновлен 12 дек. 2020
+                </div> 
                 <ShuffleIcon style={{color:'#5c5c5c',fontSize:'30px', marginBottom:'15px'}}/>
              <hr/>
 

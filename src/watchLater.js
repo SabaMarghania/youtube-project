@@ -11,13 +11,13 @@ function LikedVideos() {
                 <img src="https://i.ytimg.com/img/no_thumbnail.jpg" alt=''/>
                  <div className="watchLater__playAll">
                      <PlayArrowIcon/>
-                     Play All
+                     ВОСПРОИЗВЕСТИ ВСЕ
                  </div>
                </div>
             <div className="watchLater__info">
-                <h2>Watch later</h2>
+                <h2>Смотреть позже</h2>
                 <div className="watchLater__activities">
-                No videos • No views • Updated today
+                Нет видео • Нет просмотров • Обновлен 5 янв. 2021
                 </div>
                 <MoreHorizIcon  style={{color:'#5c5c5c',fontSize:'30px',marginBottom:'15px'}}/>
              <hr/>
@@ -33,7 +33,7 @@ function LikedVideos() {
 
             <div className="watchLater__cont">
         <div className="watchLater__videos" style={{display:'flex',alignItems:'center'}}>
-         <p>No videos in this playlist yet</p>
+         <p>В этом плейлисте нет видео.</p>
     </div>
     </div>
     </div>

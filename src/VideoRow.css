@@ -1,31 +1,33 @@
 .videoRow{
    display: flex;
-   max-width: 800px;
-   margin-bottom: 30px;
+   margin-bottom: 10px;
 }
+
 .videoRow__image{
-    width: 360px;
-    height: 200px;
+    width: 290px;
+    height: 180px;
 }
 .videoRow__text{
     margin-left: 15px;
+    width: 350px;
 }
 .videoRow__text > p{
- color: #606060;
+    color: #606060;
     font-weight: 400;
-    width: 700px;
+    width: 350px;
 }
 .videoRow__text > h3{
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .videoRow__description{
     margin-top: 20px;
 }
 .videoRow__profile{
     display: flex;
-    align-items: center;margin-bottom: 17px;
- color: #606060;
+    align-items: center;
+    margin-bottom: 17px;
+    color: #606060;
 
 }
 .videoRow__img{

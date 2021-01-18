@@ -4,7 +4,6 @@ import VideoCard from './VideoCard';
 function RecommendedVideo() {
     return (
         <div className="recommendedVideo">
-            <h2>Recommended</h2>
             <div className="recommendedVideo__videos">
                 <VideoCard
                 title="პირველი მოგება SEASON 5 - ში !!! ( Fortnite Battle Royale ) - ქართულად [REDZERG] "

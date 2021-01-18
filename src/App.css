@@ -5,7 +5,12 @@
     display: flex;
 }
 .ui{
-    margin-top: 25px;
+    width: 98%;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.embed__vid{
+    margin-left: 5px;
 }
 .filter{
     display: flex;

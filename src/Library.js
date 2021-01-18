@@ -12,16 +12,16 @@ function Library() {
         <div className="Library">
             <div className="Library__top">
             <HistoryIcon style={{color:'#706e6e'}} />
-            <h3>History</h3>
+            <h3>История</h3>
             </div>
-            <p>Videos you watch will show up here. </p>
+            <p>В этом разделе будут собраны ролики, которые вы посмотрите. </p>
             <hr/>
 
              <div className="Library__playlist">
                 <div className="Library__playlistTop">
                     <PlaylistPlayIcon style={{fontSize:'26px', color:'#706e6e'}}/>
-                    <h3>Playlists</h3>
-                     <p>Recently added</p>
+                    <h3>Плейлисты</h3>
+                     <p>Недавно добавленные</p>
                      <ArrowDropDownIcon style={{marginTop:'2px'}}/>
                   </div>
                 <div className="Library__video">
@@ -54,10 +54,10 @@ function Library() {
               <div className="Library__likedVideos">
               <div className="Library__LikedVidsTop">
               <ThumbUpIcon style={{color:'#8b8a8a',position:'absolute'}}/>
-                  <h3 className="Library__txt" style={{marginLeft:'35px'}} >Liked videos</h3>
+                  <h3 className="Library__txt" style={{marginLeft:'35px'}} >Понравившиеся</h3>
 
                   <Link to="/likedVideos" style={{textDecoration:'none'}}>
-                  <div className="Library__seeAll">See all</div>
+                  <div className="Library__seeAll">Ешё</div>
                   </Link>
 
               </div>
@@ -67,27 +67,27 @@ function Library() {
            <LibraryPlaylist
             image='https://i.ytimg.com/vi/fOLT6UYrFmw/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBAzMqyG8b0ZMo298KmPBrG63Juaw '
             Channel='redzerg'
-            viewList='1,2K views'
-            timestamp='2 weeks ago'
+            viewList='1,2 тыс. просмотров'
+            timestamp='1 месяц назад'
             title='მიღალატეს !!! ვითამაშოთ Cyberpunk 2077 ნაწილი 14 - ქართულად 👀'
            />
            <LibraryPlaylist
             image='https://i.ytimg.com/vi/4UZrsTqkcW4/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDgMuBOQMcXB9h7jiZKDakjYXyFog'
             Channel='freeCodeCamp.org'
-            viewList='334K views'
-            timestamp='2 months ago'
+            viewList='334 тыс. просмотров'
+            timestamp='2 месяца назад'
             title='Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks'
            /><LibraryPlaylist
            image='https://i.ytimg.com/vi/HfGD5xRIiMU/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDvwtF1tAGMqZEmwvZlhJOeaatjfQ'
            Channel='IT-KAMASUTRA'
            viewList='40 тыс. просмотров'
-           timestamp='1 year ago'
+           timestamp='2 года назад'
            title='22. Уроки React JS (Route exact) - react курсы бесплатно'
           /><LibraryPlaylist
           image='https://i.ytimg.com/vi/HfGD5xRIiMU/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDvwtF1tAGMqZEmwvZlhJOeaatjfQ'
           Channel='IT-KAMASUTRA'
-          viewList='42K views'
-          timestamp='1 year ago'
+          viewList='42 тыс. просмотров'
+          timestamp='2 года назад'
           title='21. Уроки React JS (Верстаем страницу Диалогов) - react курсы бесплатно '
          />
            </div>
