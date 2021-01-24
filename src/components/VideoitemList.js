@@ -3,7 +3,7 @@ import React from 'react';
 import '../VideoRow.css'
 import Avatar from "@material-ui/core/Avatar";
 
-const VideoItem = ({video , handleVideoSelect}) => {
+const VideoItemList = ({video , handleVideoSelect}) => {
     return (
        
         <div onClick={ () => handleVideoSelect(video)} className="videoRow">
@@ -16,9 +16,9 @@ const VideoItem = ({video , handleVideoSelect}) => {
       <p className="videoRow__channel">{video.snippet.channelTitle}</p>
     </div>
      
-    <p>{video.snippet.description}</p>
+    {/* <p>{video.snippet.description}</p> */}
 </div>
 </div>
     )
 };
-export default VideoItem;
+export default VideoItemList;

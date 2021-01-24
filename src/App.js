@@ -18,7 +18,8 @@ import WatchLater from './watchLater';
 import YourChannel from './YourChannel';
 import RecommendedVideo from './RecommendedVideo';
 import TuneOutlinedIcon from '@material-ui/icons/TuneOutlined';
-
+import VideoList2 from './components/VideoList2'
+import VideoDetail2 from './components/VideoDetail2';
 class App extends React.Component {
     state = {
         videos: [],
@@ -115,7 +116,7 @@ class App extends React.Component {
             <Route path='/Watch'>
             <div className="app__page">
             <VideoDetail video={this.state.selectedVideo}/>
-           <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos} />
+           <VideoList2 handleVideoSelect={this.handleVideoSelect} videos={this.state.videos} />
 
           </div>
             </Route>
