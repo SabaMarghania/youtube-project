@@ -61,7 +61,7 @@ placeholder="Search"
 />
 </Link>
 </div>
-<SearchIcon className="header__inputButton"/>
+<SearchIcon onClick={this.handleSubmit} className="header__inputButton"/>
 
 </form>
 <div className="header__icons">

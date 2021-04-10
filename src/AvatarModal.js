@@ -41,7 +41,6 @@ import { lightTheme, darkTheme, GlobalStyles } from "./Theme.js";
         <>
     <ThemeProvider theme={theme==="light" ? lightTheme : darkTheme }>
         <GlobalStyles/>
-        {/* <StyledApp/> */}
 </ThemeProvider>
             <div className="Modal" >
                     <div style={{
@@ -54,7 +53,7 @@ import { lightTheme, darkTheme, GlobalStyles } from "./Theme.js";
                             <div className="avatarModal__profilePos">
                             <Avatar/>
                             <div className="avatarModal__info">
-                            <h4>Aura</h4>
+                            <h4>Testname</h4>
                             <p>testmail@gmail.com</p>
                         </div>
                             </div>

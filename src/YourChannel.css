@@ -48,7 +48,8 @@
     font-weight: 500;
     cursor: pointer;
     
-    color: gray;
+    color: rgb(93, 142, 233);
+    color: rgb(36, 36, 36);
 }
 .YourChannel__links:hover {
     color: black;
